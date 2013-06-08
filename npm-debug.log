@@ -1,0 +1,120 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.2.25
+3 info using node@v0.10.10
+4 verbose read json /Users/event1/Jan_Laine/jade-bootstrap-demo/package.json
+5 warn package.json jade-bootstrap-demo@ No repository field.
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ '/Users/event1/Jan_Laine/jade-bootstrap-demo',
+7 verbose install   [ 'express', 'jade' ] ]
+8 verbose from cache /Users/event1/Jan_Laine/jade-bootstrap-demo/package.json
+9 info preinstall jade-bootstrap-demo@
+10 verbose from cache /Users/event1/Jan_Laine/jade-bootstrap-demo/package.json
+11 verbose readDependencies using package.json deps
+12 verbose cache add [ 'express@3.2.6', null ]
+13 verbose cache add name=undefined spec="express@3.2.6" args=["express@3.2.6",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'express@3.2.6',
+14 verbose parsed url   path: 'express@3.2.6',
+14 verbose parsed url   href: 'express@3.2.6' }
+15 verbose cache add name="express" spec="3.2.6" args=["express","3.2.6"]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: '3.2.6',
+16 verbose parsed url   path: '3.2.6',
+16 verbose parsed url   href: '3.2.6' }
+17 verbose addNamed [ 'express', '3.2.6' ]
+18 verbose addNamed [ '3.2.6', '3.2.6' ]
+19 verbose cache add [ 'jade@0.28.2', null ]
+20 verbose cache add name=undefined spec="jade@0.28.2" args=["jade@0.28.2",null]
+21 verbose parsed url { protocol: null,
+21 verbose parsed url   slashes: null,
+21 verbose parsed url   auth: null,
+21 verbose parsed url   host: null,
+21 verbose parsed url   port: null,
+21 verbose parsed url   hostname: null,
+21 verbose parsed url   hash: null,
+21 verbose parsed url   search: null,
+21 verbose parsed url   query: null,
+21 verbose parsed url   pathname: 'jade@0.28.2',
+21 verbose parsed url   path: 'jade@0.28.2',
+21 verbose parsed url   href: 'jade@0.28.2' }
+22 verbose cache add name="jade" spec="0.28.2" args=["jade","0.28.2"]
+23 verbose parsed url { protocol: null,
+23 verbose parsed url   slashes: null,
+23 verbose parsed url   auth: null,
+23 verbose parsed url   host: null,
+23 verbose parsed url   port: null,
+23 verbose parsed url   hostname: null,
+23 verbose parsed url   hash: null,
+23 verbose parsed url   search: null,
+23 verbose parsed url   query: null,
+23 verbose parsed url   pathname: '0.28.2',
+23 verbose parsed url   path: '0.28.2',
+23 verbose parsed url   href: '0.28.2' }
+24 verbose addNamed [ 'jade', '0.28.2' ]
+25 verbose addNamed [ '0.28.2', '0.28.2' ]
+26 silly lockFile fdae4232-express-3-2-6 express@3.2.6
+27 verbose lock express@3.2.6 /Users/event1/.npm/fdae4232-express-3-2-6.lock
+28 silly lockFile 4d9c5058-jade-0-28-2 jade@0.28.2
+29 verbose lock jade@0.28.2 /Users/event1/.npm/4d9c5058-jade-0-28-2.lock
+30 verbose url raw express/3.2.6
+31 verbose url resolving [ 'https://registry.npmjs.org/', './express/3.2.6' ]
+32 verbose url resolved https://registry.npmjs.org/express/3.2.6
+33 info trying registry request attempt 1 at 13:35:02
+34 http GET https://registry.npmjs.org/express/3.2.6
+35 verbose url raw jade/0.28.2
+36 verbose url resolving [ 'https://registry.npmjs.org/', './jade/0.28.2' ]
+37 verbose url resolved https://registry.npmjs.org/jade/0.28.2
+38 info trying registry request attempt 1 at 13:35:02
+39 http GET https://registry.npmjs.org/jade/0.28.2
+40 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=socket hang up
+41 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=socket hang up
+42 info trying registry request attempt 2 at 13:36:12
+43 http GET https://registry.npmjs.org/jade/0.28.2
+44 info trying registry request attempt 2 at 13:36:12
+45 http GET https://registry.npmjs.org/express/3.2.6
+46 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=140735088286912:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:766:
+47 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=socket hang up
+48 info trying registry request attempt 3 at 13:37:12
+49 http GET https://registry.npmjs.org/express/3.2.6
+50 silly lockFile fdae4232-express-3-2-6 express@3.2.6
+51 silly lockFile fdae4232-express-3-2-6 express@3.2.6
+52 error Error: tunneling socket could not be established, cause=140735088286912:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:766:
+52 error
+52 error     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:159:17)
+52 error     at ClientRequest.g (events.js:175:14)
+52 error     at ClientRequest.EventEmitter.emit (events.js:95:17)
+52 error     at CleartextStream.socketErrorListener (http.js:1520:9)
+52 error     at CleartextStream.EventEmitter.emit (events.js:95:17)
+52 error     at SecurePair.<anonymous> (tls.js:1376:15)
+52 error     at SecurePair.EventEmitter.emit (events.js:95:17)
+52 error     at SecurePair.error (tls.js:997:27)
+52 error     at CleartextStream.read [as _read] (tls.js:458:17)
+52 error     at CleartextStream.Readable.read (_stream_readable.js:320:10)
+53 error If you need help, you may report this log at:
+53 error     <http://github.com/isaacs/npm/issues>
+53 error or email it to:
+53 error     <npm-@googlegroups.com>
+54 error System Darwin 10.8.0
+55 error command "node" "/usr/local/bin/npm" "install"
+56 error cwd /Users/event1/Jan_Laine/jade-bootstrap-demo
+57 error node -v v0.10.10
+58 error npm -v 1.2.25
+59 error code ECONNRESET
+60 verbose exit [ 1, true ]
